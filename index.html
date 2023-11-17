@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoChart do Brasil</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="meuscript.js"></script>
+</head>
+<body>
+    <!-- Barra de navegação superior -->
+    <div class="navbar">
+        <h1>Dados do Enem Brasil</h1>
+    </div>
+
+    <!-- Barra lateral -->
+    <div class="sidebar">
+        <button style="margin-right: 0px;"; onclick="toggleSidebar()">Fechar barra lateral</button>
+        <a href="#">Página 1</a>
+        <a href="#">Página 2</a>
+        <a href="#">Página 3</a>
+        <a href="#">Página 4</a>
+    </div>
+
+    <!-- Botão para abrir/fechar a barra lateral -->
+    <button style="margin-right: 0px;"; onclick="toggleSidebar()">Abrir barra lateral</button>
+
+    <!-- Conteúdo principal -->
+    <div class="content">
+        <h2>Aqui você pode montar seu dashboard com os dados que você quiser do banco de dados do Inep!</h2>
+        <p>A intenção desse dashboard é possibilitar qualquer um a fazer uma análsie de dados de forma simples e intuitiva, seja para uma atividade escolar ou somente para saviar a sua curiosidade. Aproveite!</p>
+    <div id="geochart_div" style="width: 50%; height: 400px;"></div>
+    <div id="geochart2_div" style="width: 50%; height: 400px;"></div>
+    </div>
+
+        <!-- Barra de navegação inferior -->
+        <div class="footer">
+            <h1>Aqui vc pode colocar alguns gráficos</h1>
+        </div>
+
+    <!-- Script para abrir/fechar a barra lateral -->
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.querySelector('.sidebar');
+            if (sidebar.style.left === "0px") {
+                sidebar.style.left = "-250px";
+            } else {
+                sidebar.style.left = "0px";
+            }
+        }
+    </script>
+</body>
+</html>

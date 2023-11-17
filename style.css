@@ -1,0 +1,51 @@
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #111;
+            padding-top: 60px;
+            transition: left 0.3s;
+        }
+
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #ccc;
+            display: block;
+            transition: color 0.2s;
+        }
+
+        .sidebar a:hover {
+            color: white;
+        }
+
+        .content {
+            right: 0;
+        }
+
+        .button {
+            margin-right: 0;
+        }
+
+        .geochart_div {
+            display: block;
+}
+
+        .geochart2_div {
+            display: block;
+        }
